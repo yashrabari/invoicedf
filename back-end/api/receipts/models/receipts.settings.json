@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "receipts",
+  "info": {
+    "name": "receipts",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "payment_notes": {
+      "type": "string"
+    },
+    "customer": {
+      "model": "customers"
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "outward_receipts",
+        "inward_receipts"
+      ]
+    },
+    "payment_date": {
+      "type": "date"
+    },
+    "payment_option": {
+      "type": "enumeration",
+      "enum": [
+        "on_account",
+        "on_invoice"
+      ]
+    },
+    "product_type": {
+      "type": "enumeration",
+      "enum": [
+        "cash",
+        "cheque",
+        "online",
+        "bank",
+        "tds",
+        "bad_debts",
+        "csl"
+      ]
+    },
+    "number": {
+      "type": "integer",
+      "required": true,
+      "unique": true
+    }
+  }
+}

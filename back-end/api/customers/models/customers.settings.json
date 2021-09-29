@@ -1,0 +1,101 @@
+{
+  "kind": "collectionType",
+  "collectionName": "customers",
+  "info": {
+    "name": "customers"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "customer_name": {
+      "type": "string"
+    },
+    "contact_person_name": {
+      "type": "string"
+    },
+    "contact_no": {
+      "type": "integer"
+    },
+    "fax_number": {
+      "type": "integer"
+    },
+    "email": {
+      "type": "email"
+    },
+    "website": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text"
+    },
+    "landmark": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "default": "India"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "pin_code": {
+      "type": "integer"
+    },
+    "company_type": {
+      "type": "enumeration",
+      "enum": [
+        "customer",
+        "vendor",
+        "customer_vendor"
+      ]
+    },
+    "registration_type": {
+      "type": "enumeration",
+      "enum": [
+        "regular",
+        "regular_emb",
+        "regular_sez",
+        "composition",
+        "consumer",
+        "unregistered"
+      ]
+    },
+    "license_number": {
+      "type": "string"
+    },
+    "gst_number": {
+      "type": "string"
+    },
+    "pan_number": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "integer"
+    },
+    "ship_contact_person_name": {
+      "type": "string"
+    },
+    "ship_address": {
+      "type": "string"
+    },
+    "ship_country": {
+      "type": "string"
+    },
+    "ship_state": {
+      "type": "string"
+    },
+    "ship_gst": {
+      "type": "string"
+    },
+    "ship_mobile_number": {
+      "type": "biginteger"
+    }
+  }
+}

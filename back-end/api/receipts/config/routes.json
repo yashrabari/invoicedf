@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/receipts",
+      "handler": "receipts.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/count",
+      "handler": "receipts.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/receipts/:id",
+      "handler": "receipts.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/receipts",
+      "handler": "receipts.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/receipts/:id",
+      "handler": "receipts.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/receipts/:id",
+      "handler": "receipts.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

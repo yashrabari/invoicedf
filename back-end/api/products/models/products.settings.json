@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "products"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "hsn": {
+      "type": "string"
+    },
+    "unit_measurement": {
+      "type": "enumeration",
+      "enum": [
+        "grams",
+        "kg",
+        "tone"
+      ]
+    },
+    "stock": {
+      "type": "biginteger"
+    },
+    "product_type": {
+      "type": "enumeration",
+      "enum": [
+        "taxable",
+        "nill_rated",
+        "exempted",
+        "non_gst"
+      ]
+    },
+    "cgst": {
+      "type": "integer"
+    },
+    "sgst": {
+      "type": "integer"
+    },
+    "igst": {
+      "type": "integer"
+    },
+    "cess": {
+      "type": "integer"
+    },
+    "cess_amt": {
+      "type": "biginteger"
+    },
+    "sell_price": {
+      "type": "biginteger"
+    },
+    "sell_price_tax": {
+      "type": "biginteger"
+    },
+    "purchase_price": {
+      "type": "biginteger"
+    },
+    "purchase_price_tax": {
+      "type": "biginteger"
+    }
+  }
+}
